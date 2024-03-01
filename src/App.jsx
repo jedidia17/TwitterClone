@@ -1,17 +1,7 @@
-import React,{ useState} from "react";
+import Timeline from "./composants/Timeline";
 
-function App() {
-  const [count, setCount] = useState(10);
-  return (
-    <div>
-      <button onClick={() => setCount(count +1)}>Increment</button>
-      <p>Count = {count}</p>
-      <button onClick={() => setCount(count -1)}>Decrement</button>
-    </div>
-  );
+export default function App(){
+  return(
+    <Timeline/>
+  )
 }
-
-export function Button() {
-  return <button>Bouton</button>;
-}
-export default App;
